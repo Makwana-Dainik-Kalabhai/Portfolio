@@ -37,3 +37,28 @@ export const SKILLS = [
     techIcons: ["./assets/techImg/figma.svg"]
   }
 ];
+
+
+export const PROJECTS = [
+  {
+    title: "TextUtils to perform operations on the text",
+    projectImg: "./assets/TextUtils.png",
+    tech: "FrontEnd",
+    techIcons: ["./assets/techImg/react.svg"],
+    link: "https://makwana-dainik-kalabhai.github.io/TextUtils/"
+  },
+  {
+    title: "Alarm Clock to set multiple Alarms",
+    projectImg: "./assets/AlarmClock.png",
+    tech: "FrontEnd",
+    techIcons: ["./assets/techImg/react.svg"],
+    link: "https://makwana-dainik-kalabhai.github.io/AlarmClock/"
+  },
+  {
+    title: "E-Commerce Website for purchasing Medicines & Medical Devices",
+    projectImg: "./assets/E-Commerce.png",
+    tech: "Full Stack",
+    techIcons: ["./assets/techImg/html.svg","./assets/techImg/css.svg","./assets/techImg/javascript.svg","./assets/techImg/react.svg"],
+    link: "###"
+  }
+];

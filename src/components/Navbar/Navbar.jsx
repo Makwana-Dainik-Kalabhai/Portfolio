@@ -15,7 +15,7 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <div className="logo"><img src="./assets/logo.png" alt="img not found" />It's Coding Time</div>
+          <div className="logo"><img src="./assets/myPhoto.jpg" alt="img not found" />It's Coding Time</div>
           <ul>
             <li>
               <a href="#hero" className="menu-item">
@@ -28,7 +28,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/" className="menu-item">
+              <a href="#projects" className="menu-item">
                 PROJECTS
               </a>
             </li>

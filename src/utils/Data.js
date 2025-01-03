@@ -8,15 +8,18 @@ export const SKILLS = [
       { skill: "javascript", percentage: "70%" },
       { skill: "React Js", percentage: "60%" },
     ],
-    techIcons: ["./assets/techImg/html.svg","./assets/techImg/css.svg","./assets/techImg/javascript.svg","./assets/techImg/react.svg"]
+    techIcons: [
+      "./assets/techImg/html.svg",
+      "./assets/techImg/css.svg",
+      "./assets/techImg/javascript.svg",
+      "./assets/techImg/react.svg",
+    ],
   },
   {
     title: "backEnd",
     icon: "./assets/backend.png",
-    skills: [
-      { skill: "PHP", percentage: "70%" },
-    ],
-    techIcons: ["./assets/techImg/php.svg"]
+    skills: [{ skill: "PHP", percentage: "70%" }],
+    techIcons: ["./assets/techImg/php.svg"],
   },
   {
     title: "Tools",
@@ -26,39 +29,64 @@ export const SKILLS = [
       { skill: "VS Code", percentage: "75%" },
       { skill: "Responsive Design", percentage: "70%" },
     ],
-    techIcons: ["./assets/techImg/github.svg","./assets/techImg/vs code.svg","./assets/techImg/responsive.svg"]
+    techIcons: [
+      "./assets/techImg/github.svg",
+      "./assets/techImg/vs code.svg",
+      "./assets/techImg/responsive.svg",
+    ],
   },
   {
     title: "UI/UX",
     icon: "./assets/ui_ux.png",
-    skills: [
-      { skill: "Figma", percentage: "60%" },
-    ],
-    techIcons: ["./assets/techImg/figma.svg"]
-  }
+    skills: [{ skill: "Figma", percentage: "60%" }],
+    techIcons: ["./assets/techImg/figma.svg"],
+  },
 ];
-
 
 export const PROJECTS = [
   {
-    title: "TextUtils to perform operations on the text",
+    title: "TextUtils - Perform operations on the text",
     projectImg: "./assets/TextUtils.png",
+    url: "https://makwana-dainik-kalabhai.github.io/TextUtils/",
+    skills: ["React Js"],
     tech: "FrontEnd",
     techIcons: ["./assets/techImg/react.svg"],
-    link: "https://makwana-dainik-kalabhai.github.io/TextUtils/"
   },
   {
-    title: "Alarm Clock to set multiple Alarms",
+    title: "Alarm Clock - Set multiple Alarms",
     projectImg: "./assets/AlarmClock.png",
+    url: "https://makwana-dainik-kalabhai.github.io/AlarmClock/",
+    skills: ["React Js"],
     tech: "FrontEnd",
     techIcons: ["./assets/techImg/react.svg"],
-    link: "https://makwana-dainik-kalabhai.github.io/AlarmClock/"
   },
   {
-    title: "E-Commerce Website for purchasing Medicines & Medical Devices",
+    title: "NewsAdda - Read News Category wised",
+    projectImg: "./assets/NewsAdda.png",
+    url: "#",
+    skills: ["React Js"],
+    tech: "FrontEnd",
+    techIcons: ["./assets/techImg/react.svg"],
+  },
+  {
+    title: "ImageGallery - Download Favourite Images",
+    projectImg: "./assets/ImageGallery.png",
+    url: "https://makwana-dainik-kalabhai.github.io/ImageGallery/",
+    skills: ["React Js"],
+    tech: "FrontEnd",
+    techIcons: ["./assets/techImg/react.svg"],
+  },
+  {
+    title: "E-Commerce - Purchasing Medicines & Medical Devices",
     projectImg: "./assets/E-Commerce.png",
+    url: "#",
+    skills: ["HTML", "CSS", "JQuery", "PHP"],
     tech: "Full Stack",
-    techIcons: ["./assets/techImg/html.svg","./assets/techImg/css.svg","./assets/techImg/javascript.svg","./assets/techImg/react.svg"],
-    link: "###"
-  }
+    techIcons: [
+      "./assets/techImg/html.svg",
+      "./assets/techImg/css.svg",
+      "./assets/techImg/javascript.svg",
+      "./assets/techImg/php.svg",
+    ],
+  },
 ];

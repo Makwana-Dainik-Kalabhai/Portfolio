@@ -37,9 +37,9 @@ const Navbar = () => {
                 CONTACT ME
               </a>
             </li>
-            <button className="contact-btn">
+            <a href="#contact" className="contact-btn">
               Hire Me
-            </button>
+            </a>
           </ul>
           <button className="menu-btn" onClick={toggleMenu}>
             <span class="material-icons material-symbols-outlined" style={{fontSize: "1.8rem"}}>

@@ -29,7 +29,7 @@
 .projects-container h5 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .projects-content {
@@ -74,10 +74,20 @@
 }
 
 .icons {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
     gap: 2rem;
     margin-top: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.icons::-webkit-scrollbar {
+    height: 3px;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .icons>div {

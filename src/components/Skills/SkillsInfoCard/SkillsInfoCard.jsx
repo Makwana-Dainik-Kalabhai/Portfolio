@@ -43,7 +43,7 @@ const SkillsInfoCard = ({ heading, skills, techIcons }) => {
                     <div className="icons">
                         {techIcons.map((val, ind) => {
                             return <div key={val} onMouseEnter={() => { setActiveSkill(ind) }} onMouseLeave={() => { setActiveSkill(-1) }}>
-                                <img src={val} alt="img not found" />
+                                <img src={(process.env.PUBLIC_URL)+val} alt="img not found" />
                             </div>
                         })}
                     </div>

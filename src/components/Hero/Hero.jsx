@@ -13,20 +13,20 @@ const Hero = () => {
 
             <div className="hero-img">
                 <div>
-                    <img src="./assets/hero.jpg" alt="" />
+                    <img src={(process.env.PUBLIC_URL)+"/assets/hero.jpg"} alt="" />
                 </div>
                 <div>
                     <div className="tech-icon">
-                        <img src="./assets/techImg/react.svg" alt="" />
+                        <img src={(process.env.PUBLIC_URL)+"/assets/techImg/react.svg"} alt="" />
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/techImg/html.svg" alt="" />
+                        <img src={(process.env.PUBLIC_URL)+"/assets/techImg/html.svg"} alt="" />
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/techImg/css.svg" alt="" />
+                        <img src={(process.env.PUBLIC_URL)+"/assets/techImg/css.svg"} alt="" />
                     </div>
                     <div className="tech-icon">
-                        <img src="./assets/techImg/javascript.svg" alt="" />
+                        <img src={(process.env.PUBLIC_URL)+"/assets/techImg/javascript.svg"} alt="" />
                     </div>
                 </div>
             </div>

@@ -8,14 +8,14 @@ const Projects = () => {
     return (
         <>
             <section className="projects-container" id="projects">
-                <h5>Projects</h5>
+                <h5>Projects ({PROJECTS.length})</h5>
 
                 <div className="projects-content">
                     <div className="projects-info">
-                        <h6>{PROJECTS[index].title} ({PROJECTS[index].tech})</h6>
+                        <h6>{PROJECTS[index].title}</h6>
 
                         <div className="projects-info-content">
-                            <p>Skills Used:</p>
+                            <p><b>{PROJECTS[index].tech} Project</b></p>
                             <ul>
                                 {PROJECTS[index].skills.map((sk) => {
                                     return (
@@ -26,7 +26,7 @@ const Projects = () => {
                             <div className="icons">
                                 {PROJECTS[index].techIcons.map((val, ind) => {
                                     return <div>
-                                        <img src={val} alt="img not found" />
+                                        <img src={(process.env.PUBLIC_URL) + val} alt="img not found" />
                                     </div>
                                 })}
                             </div>
@@ -34,7 +34,7 @@ const Projects = () => {
                     </div>
                     <div className="projects-img">
                         <a href={PROJECTS[index].url}>
-                            <img src={PROJECTS[index].projectImg} alt="" />
+                            <img src={(process.env.PUBLIC_URL) + PROJECTS[index].projectImg} alt="" />
                         </a>
                     </div>
                 </div>

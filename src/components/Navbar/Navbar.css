@@ -32,6 +32,7 @@
     border-radius: 50%;
     outline-offset: 3.2px;
     outline: 2.2px solid #7e61e7;
+    filter: brightness(110%) contrast(120%);
 }
 
 .nav-content ul {

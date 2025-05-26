@@ -45,6 +45,7 @@
     line-height: 1rem;
     margin-bottom: 5%;
 }
+
 .hero-content p {
     width: 80%;
     font-size: 1rem;
@@ -94,84 +95,112 @@
     transition: all 0.3s ease;
 }
 
-.hero-img>div>img:hover, .tech-icon img:hover {
+.hero-img>div>img:hover,
+.tech-icon img:hover {
     transform: translateY(-0.5rem);
 }
 
-@media (max-width: 1025px)
-{
+@media (max-width: 1025px) {
     .hero-content h2 {
         font-size: 3rem;
         line-height: 4rem;
     }
+
     .hero-content h3 {
         font-size: 1.7rem;
     }
+
     .hero-content p {
         font-size: 1rem;
         line-height: 1.6rem;
     }
+
     .hero-img>div>img {
         width: 20rem;
     }
+
     .tech-icon {
         width: 4rem;
         height: 4rem;
     }
+
     .tech-icon img {
         width: 2.5rem;
     }
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
     }
+
+    .hero-content {
+        width: 100%;
+    }
+
     .hero-img {
+        width: 80%;
         margin: 2rem 0;
     }
+    .hero-img div {
+        width: 100%;
+    }
+    .hero-img>div>img {
+        width: 100%;
+    }
+
     .hero-container h2 {
         margin-top: 3rem;
     }
-    .hero-container h2,.hero-container h3,.hero-container p {
+
+    .hero-container h2,
+    .hero-container h3,
+    .hero-container p {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
-    .hero-container::after,.hero-container::before {
+
+    .hero-container::after,
+    .hero-container::before {
         width: 18rem;
         height: 18rem;
     }
 }
 
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
     .hero-container h2 {
         font-size: 2.2rem;
         line-height: 3rem;
     }
+
     .hero-container h3 {
         font-size: 1.2rem;
     }
+
     .hero-container p {
         font-size: 0.8rem;
         line-height: 1.3rem;
     }
+
     .hero-img {
         gap: 1rem;
     }
+
     .hero-img>div {
         gap: 1rem;
     }
+
     .hero-img>div>img {
         width: 16rem;
     }
+
     .tech-icon {
         width: 3.3rem;
         height: 3.3rem;
     }
+
     .tech-icon img {
         width: 2rem;
     }

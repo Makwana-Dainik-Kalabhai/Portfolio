@@ -26,11 +26,49 @@
     right: 0rem;
 }
 
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
 .projects-container h5 {
+    width: fit-content;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 2.5rem;
 }
+
+.btns {
+    width: fit-content;
+    font-size: 1.8rem;
+    letter-spacing: 0.7rem;
+}
+
+.btns button {
+    margin: 0 1rem;
+}
+
+.prev-btn,
+.next-btn {
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding: 0.3rem 0.8rem;
+    color: white;
+    background-color: #6751b9;
+    box-shadow: 0px 0px 3px 1px #7c66e3;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    scale: 1.1;
+    background-color: #7c66e3;
+}
+
+
 
 .projects-content {
     width: 100%;
@@ -136,32 +174,6 @@
     filter: brightness(75%);
 }
 
-.btns {
-    width: fit-content;
-    margin: auto;
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.7rem;
-}
-.btns button {
-    margin: 0 1rem;
-}
-
-.prev-btn, .next-btn {
-    cursor: pointer;
-    font-size: 1.7rem;
-    padding: 0.3rem 0.8rem;
-    color: white;
-    background-color: #6751b9;
-    box-shadow: 0px 0px 3px 1px #7c66e3;
-    border: none;
-    border-radius: 50%;
-    transition: all 0.3s linear;
-}
-
-.prev-btn:hover, .next-btn:hover {
-    background-color: #7c66e3;
-}
 
 @media (max-width: 1025px) {
     .projects {
@@ -187,13 +199,23 @@
 
     .projects-container h5 {
         font-size: 1.3rem;
-        margin-bottom: 2rem;
     }
 
     .projects-container::after,
     .projects-container::before {
         width: 18rem;
         height: 18rem;
+    }
+
+    .prev-btn,
+    .next-btn {
+        padding: 0.2rem 0.6rem;
+    }
+
+    .projects-img {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
     }
 }
 
@@ -202,18 +224,25 @@
         padding: 0;
     }
 
+    .prev-btn,
+    .next-btn {
+        font-size: 1.4rem;
+        padding: 0.2rem 0.5rem;
+    }
+
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .projects-info {
         width: 100%;
         height: 100%;
     }
+
     .projects-img {
-        width: 100%;
-        height: 100%;
         padding: 0.5rem;
     }
+
     .projects-info-content {
         padding: 1rem 2rem;
     }

@@ -8,7 +8,15 @@ const Projects = () => {
     return (
         <>
             <section className="projects-container" id="projects">
-                <h5>Projects ({PROJECTS.length})</h5>
+
+                <div className="projects-header">
+                    <h5>Projects ({PROJECTS.length})</h5>
+
+                    <div className="btns">
+                        <button className="prev-btn" onClick={() => { setIndex(index - 1); }} disabled={index > 0 ? false : true}><i className="fa-solid fa-arrow-left"></i></button>
+                        <button className="next-btn" onClick={() => { setIndex(index + 1); }} disabled={index < PROJECTS.length - 1 ? false : true}><i className="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
 
                 <div className="projects-content">
                     <div className="projects-info">
@@ -38,10 +46,10 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-                <div className="btns">
+                {/* <div className="btns">
                     <button className="prev-btn" onClick={() => { setIndex(index - 1); }} disabled={index > 0 ? false : true}><i className="fa-solid fa-arrow-left"></i></button>.....
                     <button className="next-btn" onClick={() => { setIndex(index + 1); }} disabled={index < PROJECTS.length - 1 ? false : true}><i className="fa-solid fa-arrow-right"></i></button>
-                </div>
+                </div> */}
             </section>
         </>
     );

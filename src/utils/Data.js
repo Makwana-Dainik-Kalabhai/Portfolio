@@ -83,6 +83,14 @@ export const PROJECTS = [
     techIcons: ["/assets/techImg/react.svg"],
   },
   {
+    title: "Todo List - Add, Update & Delete Items/Tasks from the list",
+    projectImg: "/assets/TodoList.png",
+    url: "https://todo-list-dainik31.netlify.app/",
+    skills: ["React Js"],
+    tech: "FrontEnd",
+    techIcons: ["/assets/techImg/react.svg"],
+  },
+  {
     title: "NewsAdda - Read News Category wised",
     projectImg: "/assets/NewsAdda.png",
     url: "#",

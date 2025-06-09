@@ -107,6 +107,20 @@ export const PROJECTS = [
     techIcons: ["/assets/techImg/react.svg"],
   },
   {
+    title: "CashFlow - Track Expenses, Save Smarter, Live Better",
+    projectImg: "/assets/CashFlow.png",
+    url: "#",
+    skills: ["HTML", "CSS", "jQuery", "PHP", "MySql"],
+    tech: "Full Stack",
+    techIcons: [
+      "/assets/techImg/html.svg",
+      "/assets/techImg/css.svg",
+      "/assets/techImg/javascript.svg",
+      "/assets/techImg/php.svg",
+      "/assets/techImg/mysql.avif",
+    ],
+  },
+  {
     title: "E-Commerce - Purchasing Medicines & Medical Devices",
     projectImg: "/assets/E-Commerce.png",
     url: "#",

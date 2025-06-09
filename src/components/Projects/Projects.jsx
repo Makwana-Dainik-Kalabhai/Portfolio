@@ -25,15 +25,15 @@ const Projects = () => {
                         <div className="projects-info-content">
                             <p><b>{PROJECTS[index].tech} Project</b></p>
                             <ul>
-                                {PROJECTS[index].skills.map((sk) => {
+                                {PROJECTS[index].skills.map((sk, i) => {
                                     return (
-                                        <li>{sk}</li>
+                                        <li key={i}>{sk}</li>
                                     )
                                 })}
                             </ul>
                             <div className="icons">
                                 {PROJECTS[index].techIcons.map((val, ind) => {
-                                    return <div>
+                                    return <div key={ind}>
                                         <img src={(process.env.PUBLIC_URL) + val} alt="img not found" />
                                     </div>
                                 })}
@@ -46,10 +46,6 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-                {/* <div className="btns">
-                    <button className="prev-btn" onClick={() => { setIndex(index - 1); }} disabled={index > 0 ? false : true}><i className="fa-solid fa-arrow-left"></i></button>.....
-                    <button className="next-btn" onClick={() => { setIndex(index + 1); }} disabled={index < PROJECTS.length - 1 ? false : true}><i className="fa-solid fa-arrow-right"></i></button>
-                </div> */}
             </section>
         </>
     );

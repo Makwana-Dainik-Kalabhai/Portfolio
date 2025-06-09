@@ -26,7 +26,15 @@
     object-fit: contain;
 }
 
-.contact-details-card p {
+.contact-details-card a {
+    color: white;
     font-size: 0.9rem;
     font-weight: 400;
+    text-decoration: none;
+}
+.contact-details-card a:hover {
+    text-decoration: underline;
+}
+.contact-details-card a:visited {
+    color: white;
 }

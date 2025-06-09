@@ -48,7 +48,7 @@ const ContactForm = () => {
     return (
         <div className="contact-form-content">
             <div className='alert' style={{ display: (emailAlert.display) ? "block" : "none" }}>
-                &emsp;<i class="fa-solid fa-circle-exclamation"></i>&emsp;{(emailAlert.color == "#00e600") ? "Email Sent Successfully" : "Something Went Wrong"}&emsp;&emsp;
+                &emsp;<i className="fa-solid fa-circle-exclamation"></i>&emsp;{(emailAlert.color == "#00e600") ? "Email Sent Successfully" : "Something Went Wrong"}&emsp;&emsp;
                 <div style={{ backgroundColor: `${emailAlert.color}` }}></div>
             </div>
 

@@ -146,7 +146,6 @@ export const PROJECTS = [
   },
 ];
 
-
 export const LANGUAGES = [
   {
     language: "HTML",
@@ -167,10 +166,6 @@ export const LANGUAGES = [
   {
     language: "React Js",
     icon: "/assets/techImg/react.svg",
-  },
-  {
-    language: "figma",
-    icon: "/assets/techImg/figma.svg",
   },
   {
     language: "C",
@@ -199,6 +194,10 @@ export const LANGUAGES = [
   {
     language: "mongoDB",
     icon: "/assets/techImg/mongodb.svg",
+  },
+  {
+    language: "figma",
+    icon: "/assets/techImg/figma.svg",
   },
   {
     language: "GitHub",

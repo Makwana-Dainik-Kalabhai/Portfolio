@@ -19,16 +19,16 @@ const Hero = () => {
                 </div>
                 <div>
                     <div className="tech-icon">
-                        <img src={(process.env.PUBLIC_URL) + "/assets/techImg/react.svg"} alt="" />
-                    </div>
-                    <div className="tech-icon">
                         <img src={(process.env.PUBLIC_URL) + "/assets/techImg/html.svg"} alt="" />
                     </div>
                     <div className="tech-icon">
                         <img src={(process.env.PUBLIC_URL) + "/assets/techImg/css.svg"} alt="" />
                     </div>
                     <div className="tech-icon">
-                        <img src={(process.env.PUBLIC_URL) + "/assets/techImg/javascript.svg"} alt="" />
+                        <img src={(process.env.PUBLIC_URL) + "/assets/techImg/jquery.svg"} alt="" />
+                    </div>
+                    <div className="tech-icon">
+                        <img src={(process.env.PUBLIC_URL) + "/assets/techImg/react.svg"} alt="" />
                     </div>
                 </div>
             </div>

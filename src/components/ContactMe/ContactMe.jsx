@@ -12,6 +12,7 @@ const ContactMe = () => {
                 <div style={{flex: 1}}>
                     <ContactInfoCard iconUrl={(process.env.PUBLIC_URL)+"/assets/email.svg"} link="dainikmakwana31@gmail.com" />
                     <ContactInfoCard iconUrl={(process.env.PUBLIC_URL)+"/assets/techImg/github.svg"} link="https://github.com/Makwana-Dainik-Kalabhai" />
+                    <ContactInfoCard iconUrl={(process.env.PUBLIC_URL)+"/assets/techImg/linkedin.svg"} link="https://www.linkedin.com/in/dainik-k-makwana-42723b306" />
                 </div>
                 <div style={{flex: 1}}>
                     <ContactForm />

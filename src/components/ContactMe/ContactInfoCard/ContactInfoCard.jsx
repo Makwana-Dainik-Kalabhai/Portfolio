@@ -7,7 +7,7 @@ const ContactInfoCard = ({ iconUrl, link }) => {
                 <div className="icon">
                     <img src={iconUrl} alt={link} />
                 </div>
-                <a href={`mailto: ${link}`}>{link}</a>
+                <a href={(link.includes("@gmail.com")) ? `mailto: ${link}` : link}>{link}</a>
             </div>
         </>
     );

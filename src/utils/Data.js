@@ -1,46 +1,42 @@
+//! Skills
 export const SKILLS = [
   {
     title: "FontEnd",
     icon: "/assets/frontend.png",
-    skills: [
-      { skill: "HTML", percentage: "90%" },
-      { skill: "CSS", percentage: "70%" },
-      { skill: "javascript", percentage: "70%" },
-      { skill: "React Js", percentage: "60%" },
-    ],
+    skills: ["HTML", "CSS", "jQuery", "React Js"],
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg",
+      "/assets/techImg/jquery.svg",
       "/assets/techImg/react.svg",
     ],
   },
   {
     title: "backEnd",
     icon: "/assets/backend.png",
-    skills: [{ skill: "PHP", percentage: "70%" }],
-    techIcons: ["/assets/techImg/php.svg"],
+    skills: ["PHP", "MySQL", "nodeJs", "mongoDB"],
+    techIcons: [
+      "/assets/techImg/php.svg",
+      "/assets/techImg/mysql.svg",
+      "/assets/techImg/nodejs.svg",
+      "/assets/techImg/mongodb.svg",
+    ],
   },
   {
     title: "Tools",
     icon: "/assets/tools.png",
-    skills: [
-      { skill: "Git & GitHub", percentage: "60%" },
-      { skill: "VS Code", percentage: "75%" },
-    ],
-    techIcons: [
-      "/assets/techImg/github.svg",
-      "/assets/techImg/vs code.svg",
-    ],
+    skills: ["Git & GitHub", "VS Code"],
+    techIcons: ["/assets/techImg/github.svg", "/assets/techImg/vs code.svg"],
   },
   {
     title: "UI/UX",
     icon: "/assets/ui_ux.png",
-    skills: [{ skill: "Figma", percentage: "60%" }],
+    skills: ["Figma"],
     techIcons: ["/assets/techImg/figma.svg"],
   },
 ];
 
+//! Projects
 export const PROJECTS = [
   {
     title: "Currency Convertor - Convert currency based on latest price",
@@ -51,7 +47,7 @@ export const PROJECTS = [
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg"
+      "/assets/techImg/jquery.svg",
     ],
   },
   {
@@ -63,7 +59,7 @@ export const PROJECTS = [
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg"
+      "/assets/techImg/jquery.svg",
     ],
   },
   {
@@ -110,42 +106,106 @@ export const PROJECTS = [
     title: "CashFlow - Track Expenses, Save Smarter, Live Better",
     projectImg: "/assets/CashFlow.png",
     url: "#",
-    skills: ["HTML", "CSS", "jQuery", "PHP", "MySql"],
+    skills: ["HTML", "CSS", "jQuery", "PHP", "MySQL"],
     tech: "Full Stack",
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg",
+      "/assets/techImg/jquery.svg",
       "/assets/techImg/php.svg",
-      "/assets/techImg/mysql.avif",
+      "/assets/techImg/mysql.svg",
     ],
   },
   {
     title: "E-Commerce - Purchasing Medicines & Medical Devices",
     projectImg: "/assets/E-Commerce.png",
     url: "#",
-    skills: ["HTML", "CSS", "jQuery", "PHP", "MySql"],
+    skills: ["HTML", "CSS", "jQuery", "PHP", "MySQL"],
     tech: "Full Stack",
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg",
+      "/assets/techImg/jquery.svg",
       "/assets/techImg/php.svg",
-      "/assets/techImg/mysql.avif",
+      "/assets/techImg/mysql.svg",
     ],
   },
   {
     title: "GYM Mgt. System - Shape your body",
     projectImg: "/assets/IFS.png",
     url: "#",
-    skills: ["HTML", "CSS", "jQuery", "PHP", "MySql"],
+    skills: ["HTML", "CSS", "jQuery", "PHP", "MySQL"],
     tech: "Full Stack",
     techIcons: [
       "/assets/techImg/html.svg",
       "/assets/techImg/css.svg",
-      "/assets/techImg/javascript.svg",
+      "/assets/techImg/jquery.svg",
       "/assets/techImg/php.svg",
-      "/assets/techImg/mysql.avif",
+      "/assets/techImg/mysql.svg",
     ],
-  }
+  },
+];
+
+
+export const LANGUAGES = [
+  {
+    language: "HTML",
+    icon: "/assets/techImg/html.svg",
+  },
+  {
+    language: "CSS",
+    icon: "/assets/techImg/css.svg",
+  },
+  {
+    language: "Bootstrap",
+    icon: "/assets/techImg/bootstrap.svg",
+  },
+  {
+    language: "jQuery",
+    icon: "/assets/techImg/jquery.svg",
+  },
+  {
+    language: "React Js",
+    icon: "/assets/techImg/react.svg",
+  },
+  {
+    language: "figma",
+    icon: "/assets/techImg/figma.svg",
+  },
+  {
+    language: "C",
+    icon: "/assets/techImg/c.svg",
+  },
+  {
+    language: "C++",
+    icon: "/assets/techImg/cpp.svg",
+  },
+  {
+    language: "Java",
+    icon: "/assets/techImg/java.svg",
+  },
+  {
+    language: "PHP",
+    icon: "/assets/techImg/php.svg",
+  },
+  {
+    language: "MySQL",
+    icon: "/assets/techImg/mysql.svg",
+  },
+  {
+    language: "nodejs",
+    icon: "/assets/techImg/nodejs.svg",
+  },
+  {
+    language: "mongoDB",
+    icon: "/assets/techImg/mongodb.svg",
+  },
+  {
+    language: "GitHub",
+    icon: "/assets/techImg/github.svg",
+  },
+  {
+    language: "VSCode",
+    icon: "/assets/techImg/vs code.svg",
+  },
 ];

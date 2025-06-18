@@ -20,7 +20,7 @@ const Projects = () => {
 
                 <div className="projects-content">
                     <div className="projects-info">
-                        <h6>{PROJECTS[index].title}</h6>
+                        <h6>{index+1}) {PROJECTS[index].title}</h6>
 
                         <div className="projects-info-content">
                             <p><b>{PROJECTS[index].tech} Project</b></p>
@@ -34,7 +34,7 @@ const Projects = () => {
                             <div className="icons">
                                 {PROJECTS[index].techIcons.map((val, ind) => {
                                     return <div key={ind}>
-                                        <img src={(process.env.PUBLIC_URL) + val} alt="img not found" />
+                                        <img src={(process.env.PUBLIC_URL) + val} alt={PROJECTS[index].skills[ind]} />
                                     </div>
                                 })}
                             </div>

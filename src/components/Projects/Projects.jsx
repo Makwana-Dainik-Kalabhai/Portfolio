@@ -1,54 +1,34 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { PROJECTS } from "../../utils/Data"
 import "./Projects.css";
-import { PROJECTS } from "../../utils/Data";
+import { ProjectModal } from "./PorjectModal/ProjectModal";
 
-const Projects = () => {
-    let [index, setIndex] = useState(0);
+export const Projects = () => {
+
+    const [projectSize, setProjectSize] = useState(8);
+    const [modal, setModal] = useState(-1);
 
     return (
-        <>
-            <section className="projects-container" id="projects">
+        <section className="projects-container">
+            <div className="projects-header">
+                <h5>Projects ({PROJECTS.length})</h5>
+            </div>
 
-                <div className="projects-header">
-                    <h5>Projects ({PROJECTS.length})</h5>
-
-                    <div className="btns">
-                        <button className="prev-btn" onClick={() => { setIndex(index - 1); }} disabled={index > 0 ? false : true}><i className="fa-solid fa-arrow-left"></i></button>
-                        <button className="next-btn" onClick={() => { setIndex(index + 1); }} disabled={index < PROJECTS.length - 1 ? false : true}><i className="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
-
-                <div className="projects-content">
-                    <div className="projects-info">
-                        <h6>{index+1}) {PROJECTS[index].title}</h6>
-
-                        <div className="projects-info-content">
-                            <p><b>{PROJECTS[index].tech} Project</b></p>
-                            <ul>
-                                {PROJECTS[index].skills.map((sk, i) => {
-                                    return (
-                                        <li key={i}>{sk}</li>
-                                    )
-                                })}
-                            </ul>
-                            <div className="icons">
-                                {PROJECTS[index].techIcons.map((val, ind) => {
-                                    return <div key={ind}>
-                                        <img src={(process.env.PUBLIC_URL) + val} alt={PROJECTS[index].skills[ind]} />
-                                    </div>
-                                })}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projects-img">
-                        <a href={PROJECTS[index].url}>
-                            <img src={(process.env.PUBLIC_URL) + PROJECTS[index].projectImg} alt="" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
+            <div className="projects-grid">
+                {PROJECTS.map((ele, ind) => {
+                    return (
+                        <>
+                            {ind < projectSize &&
+                                <div className="project-card" onClick={() => setModal(ind)} key={ind}>
+                                    <img src={process.env.PUBLIC_URL + ele.projectImg} alt={ele.tech} />
+                                    <span>{ele.title}</span>
+                                </div>}
+                            {modal === ind && <ProjectModal ele={ele} setModal={setModal} key={ind} />}
+                        </>
+                    )
+                })}
+            </div>
+            <button style={{ display: (projectSize >= PROJECTS.length - 1) && "none" }} onClick={() => setProjectSize((prev) => (prev + 4))}>Load More</button>
+        </section>
+    )
 }
-
-export default Projects;

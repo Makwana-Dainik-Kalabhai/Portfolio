@@ -176,7 +176,7 @@ export const LANGUAGES = [
     icon: "/assets/techImg/cpp.svg",
   },
   {
-    language: "Java",
+    language: "CoreJava",
     icon: "/assets/techImg/java.svg",
   },
   {

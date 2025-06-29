@@ -9,7 +9,7 @@ export const Projects = () => {
     const [modal, setModal] = useState(-1);
 
     return (
-        <section className="projects-container">
+        <section className="projects-container" id="projects">
             <div className="projects-header">
                 <h5>Projects ({PROJECTS.length})</h5>
             </div>

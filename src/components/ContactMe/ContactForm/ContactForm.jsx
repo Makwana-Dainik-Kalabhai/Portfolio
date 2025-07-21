@@ -27,6 +27,7 @@ const ContactForm = () => {
                         color: "#00e600",
                         display: true
                     });
+                    form.current.reset();
                 },
                 (error) => {
                     setEmailAlert({

@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     display: grid;
     place-items: center;
-    z-index: 10;
+    z-index: 31;
 }
 
 .project-modal {
@@ -174,5 +174,8 @@
 @media (max-width: 360px) {
     .project-modal {
         padding: 1rem;
+    }
+    .project-modal .close-modal {
+        top: -5%;
     }
 }

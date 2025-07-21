@@ -1,7 +1,8 @@
 import "./ProjectModal.css";
 
 export const ProjectModal = ({ ele, setModal }) => {
-    const { title, projectImg, url, skills, tech, techIcons } = ele;
+
+    const { title, projectImg, url, github, skills, tech, techIcons } = ele;
 
     return (
         <div className="modal-container">
@@ -25,7 +26,8 @@ export const ProjectModal = ({ ele, setModal }) => {
                     })}
                 </div>
 
-                <button><a href={url}>View</a></button>
+                <button><a href={url}>View</a></button>&emsp;
+                <button><a href={github}>Github</a></button>
             </div>
         </div>
     );

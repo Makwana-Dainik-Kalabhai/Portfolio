@@ -26,7 +26,7 @@ export const ProjectModal = ({ ele, setModal }) => {
                     })}
                 </div>
 
-                <button><a href={url}>View</a></button>&emsp;
+                <button><a href={url}>View</a></button>
                 <button><a href={github}>Github</a></button>
             </div>
         </div>

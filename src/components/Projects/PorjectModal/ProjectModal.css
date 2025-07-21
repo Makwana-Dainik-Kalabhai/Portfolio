@@ -68,6 +68,11 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 2rem 0;
+    max-height: 230px;
+    overflow: auto;
+}
+.skills-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .skills-grid .skill {
@@ -109,7 +114,7 @@
 
 .project-modal button {
     display: inline-block;
-    margin: 0;
+    margin: 0.3rem;
     font-size: 0.8em;
     padding: 0.5rem 2rem;
 }

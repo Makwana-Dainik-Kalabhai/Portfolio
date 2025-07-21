@@ -132,7 +132,7 @@
 
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .hero-content {
@@ -140,7 +140,7 @@
     }
 
     .hero-img {
-        width: 80%;
+        width: 100%;
         margin: 2rem 0;
     }
     .hero-img div {
@@ -194,7 +194,7 @@
     }
 
     .hero-img>div>img {
-        width: 16rem;
+        width: 100%;
     }
 
     .tech-icon {

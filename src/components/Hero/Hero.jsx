@@ -7,7 +7,7 @@ const Hero = () => {
         <section className="hero-container" id="hero">
             <div className="hero-content">
                 <h2>Hey, I am a</h2>
-                <h3><ReactTyped strings={["Web Designer", "FronEnd Developer", "BackEnd Developer", "UI/UX Designer", "Problem Solver"]} typeSpeed={40} loop /></h3>
+                <h3><ReactTyped strings={["Web Designer", "Frontend Developer", "Backend Developer", "UI/UX Designer", "Problem Solver"]} typeSpeed={40} loop /></h3>
                 <p><b>Passionate Full-Stack Developer | Transforming ideas in virtual world | Visually Stunning Web Solutions.</b><br /> Aspiring Web Developer with foundational knowledge in HTML, CSS, jQuery, Bootstrap, and React. Seeking opportunities to leverage front-end development skills in creating dynamic, responsive
                     websites in a collaborative team environment.
                 </p>

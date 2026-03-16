@@ -1,7 +1,7 @@
 //! Skills
 export const SKILLS = [
   {
-    title: "FontEnd",
+    title: "Frontend",
     icon: "/assets/frontend.png",
     skills: ["HTML", "CSS", "jQuery", "React Js"],
     techIcons: [
@@ -12,7 +12,7 @@ export const SKILLS = [
     ],
   },
   {
-    title: "backEnd",
+    title: "Backend",
     icon: "/assets/backend.png",
     skills: ["PHP", "MySQL", "nodeJs", "mongoDB"],
     techIcons: [

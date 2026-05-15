@@ -2,7 +2,7 @@ import "./ProjectModal.css";
 
 export const ProjectModal = ({ ele, setModal }) => {
 
-    const { title, projectImg, url, github, skills, tech, techIcons } = ele;
+    const { title, projectImg, url, source, skills, tech, techIcons } = ele;
 
     return (
         <div className="modal-container">
@@ -12,7 +12,11 @@ export const ProjectModal = ({ ele, setModal }) => {
 
                 <div className="project-img">
                     <span className="badge">{tech}</span>
-                    <a href={url}><img src={process.env.PUBLIC_URL + projectImg} /></a>
+                    <a href={url} target="_blank">
+                        {(title === "Food Spoilage Detection - IOT based project") ?
+                            <iframe src="https://drive.google.com/file/d/1Cu3xaBNZ6fwVpPovwzKYxu6_AbSTWA96/preview" allow="autoplay" allowfullscreen style={{ width: "100%", height: "55vh", borderRadius: "1.65rem" }}></iframe>
+                            : <img src={process.env.PUBLIC_URL + projectImg} alt={title} />}
+                    </a>
                 </div>
 
                 <div className="skills-grid">
@@ -27,7 +31,7 @@ export const ProjectModal = ({ ele, setModal }) => {
                 </div>
 
                 <button><a href={url} target="_blank">Preview</a></button>
-                <button><a href={github} target="_blank">Github</a></button>
+                <button><a href={source} target="_blank">Source</a></button>
             </div>
         </div>
     );
